@@ -1,0 +1,91 @@
+namespace Color {
+    enum Code {
+        FG_RED = 31,
+        FG_GREEN = 32,
+        FG_BLUE = 34,
+        FG_DEFAULT = 39,
+        BG_RED = 41,
+        BG_GREEN = 42,
+        BG_BLUE = 44,
+        BG_DEFAULT = 49
+    };
+
+    class Modifier {
+        Code code;
+    public:
+        Modifier(Code pCode) : code(pCode) {}
+
+        friend ostream &
+        operator<<(ostream &os, const Modifier &mod) {
+            return os << "\033[" << mod.code << "m";
+        }
+    };
+}
+
+string to_string(const string& s) {
+    return '"' + s + '"';
+}
+
+string to_string(char s) {
+    return "'" + string(1, s) + "'";
+}
+
+string to_string(const char* s) {
+    return to_string((string) s);
+}
+string to_string(bool b) {
+    return (b ? "true" : "false");
+}
+template <typename A, typename B>
+string to_string(pair<A, B> p) {
+    return "(" + to_string(p.first) + ", " + to_string(p.second) + ")";
+}
+template <typename A>
+string to_string(A v) {
+    bool first = true;
+    string res = "{";
+    for (const auto &x : v) {
+        if (!first) {
+            res += ", ";
+        }
+        first = false;
+        res += to_string(x);
+    }
+    res += "}";
+    return res;
+}
+
+class Log {
+public:
+    Color::Modifier red = Color::Modifier(Color::FG_RED);
+    Color::Modifier def = Color::Modifier(Color::FG_DEFAULT);
+
+    Log(const string &funcName) {
+#if defined LOCAL
+        system(("chcp "s + to_string(CP_UTF8) + ">nul 2>nul"s).c_str());
+        cout << red << funcName << ": ";
+#endif
+    }
+
+    template<typename T>
+    Log &operator<<(const T &v) {
+#if defined LOCAL
+        cout << to_string(v);
+#endif
+        return *this;
+    }
+
+    Log &operator<<(ostream &(*os)(ostream &)) {
+#if defined LOCAL
+        cout << os;
+#endif
+        return *this;
+    }
+
+
+    ~Log() {
+#if defined LOCAL
+        cout << def << endl;
+#endif
+    }
+};

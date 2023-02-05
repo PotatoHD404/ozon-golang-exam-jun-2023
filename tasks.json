@@ -1,0 +1,98 @@
+{
+    "A": [
+        {
+            "input": "\n",
+            "output": "I am sure that I will fill out the form by 23:59 on February 5, 2023.\n"
+        }
+    ],
+    "B": [
+        {
+            "input": "5\n2 1 3 1 2 3 1 1 4 2\n1 1 1 2 2 2 3 3 3 4\n1 1 1 1 2 2 2 3 3 4\n4 3 3 2 2 2 1 1 1 1\n4 4 4 4 4 4 4 4 4 4",
+            "output": "YES\nNO\nYES\nYES\nNO\n"
+        }
+    ],
+    "C": [
+        {
+            "input": "6\nR48FAO00OOO0OOA99OKA99OK\nR48FAO00OOO0OOA99OKA99O\nA9PQ\nA9PQA\nA99AAA99AAA99AAA99AA\nAP9QA",
+            "output": "R48FA O00OO O0OO A99OK A99OK\n-\nA9PQ\n-\nA99AA A99AA A99AA A99AA\n-\n"
+        }
+    ],
+    "D": [
+        {
+            "input": "6\n4\n20 10 20 30\n3\n5 7 6\n5\n6 3 4 3 1\n5\n200 10 100 11 200\n1\n1000000000\n11\n13 8 12 1 7 10 1 8 10 2 17",
+            "output": "2 1 2 4 \n1 1 1 \n5 2 2 2 1 \n4 1 3 1 4 \n1 \n9 4 9 1 4 7 1 4 7 1 11 \n"
+        }
+    ],
+    "E": [
+        {
+            "input": "3\n8\nBooble\nyyyess\noooops\noooooopppss\nBoooble\nyyessss\noooops\nooooppssss\n6\na\naa\nMMM\nmmm\nyess\nyyes\n5\nrrrrrrrr\nrrrrrr\nrrr\nrr\nr",
+            "output": "4\n6\n2\n"
+        }
+    ],
+    "F": [
+        {
+            "input": "7\n8\n7\n8\n1,7,1\n8\n1-5,1,7-7\n10\n1-5\n10\n1,2,3,4,5,6,8,9,10\n3\n1-2\n100\n1-2,3-7,10-20,100",
+            "output": "8,1-6\n2-6,8\n6,8\n6-10\n7\n3\n9,21-99,8\n"
+        }
+    ],
+    "G": [
+        {
+            "input": "4\n5 5\n2 1 3 5 2\n5 4\n1 1 1 1\n200000 4\n100000 100001 100001 100000\n2 2\n2 1",
+            "output": "00+0+\nx\n-0+0\n00\n"
+        }
+    ],
+    "H": [
+        {
+            "input": "*****.**\n***.*.**\n**..****\n**..*...\n........\n****.***\n...*.***\n******..\n1\n3\n***\n..*\n..*\n",
+            "output": "29\n"
+        },
+        {
+            "input": ".*******\n******.*\n*****.**\n*.....**\n*****.**\n*.***.**\n**.*****\n*******.\n1\n3\n.*\n**\n.*\n",
+            "output": "33\n"
+        },
+        {
+            "input": "*.******\n..******\n*..**.**\n*.*.****\n*.***.**\n*.**..**\n*.*.**.*\n*.*****.\n1\n2\n**.\n.**\n",
+            "output": "28\n"
+        },
+        {
+            "input": "***.****\n*.******\n.***....\n*.*....*\n*.***..*\n*.....*.\n*...*.**\n.******.\n3\n2\n**\n**\n5\n*\n*\n*\n*\n*\n2\n.**\n**.\n",
+            "output": "18\n"
+        }
+    ],
+    "I": [
+        {
+            "input": "4\n5\n<table>\n    <tr>\n        <td></td>\n    </tr>\n</table>\n4\n<table>\n    <tr><td></td><td></td><td></td></tr>\n    <tr><td></td><td></td><td></td></tr>\n</table>\n5\n<t                      a\nble><tr><td></td></tr><tr\n><td><table><tr><td></td>\n</tr></table></td></tr></\ntable                   >\n35\n<table>\n    <tr>\n        <td>\n        </td>\n        <td>\n            <table>\n                <tr><td>\n                    <table><tr><td></td></tr></table>\n                </td></tr>\n            </table>\n        </td>\n        <td>\n        </td>\n    </tr>\n    <tr>\n        <td>\n            <table><tr>\n                <td></td>\n                <td></td>\n                <td></td>\n                <td></td>\n            </tr></table>\n        </td>\n        <td>\n            <table><tr><td></td></tr></table>\n        </td>\n        <td>\n            <table>\n                <tr><td></td></tr>\n                <tr><td></td></tr>\n                <tr><td></td></tr>\n            </table>\n        </td>\n    </tr>\n</table>\n",
+            "output": "+-+\n|.|\n+-+\n+-+-+-+\n|.|.|.|\n+-+-+-+\n|.|.|.|\n+-+-+-+\n+---+\n|...|\n+---+\n|+-+|\n||.||\n|+-+|\n+---+\n+---------+-----+---+\n|.........|+---+|...|\n|.........||+-+||...|\n|.........|||.|||...|\n|.........||+-+||...|\n|.........|+---+|...|\n+---------+-----+---+\n|+-+-+-+-+|+-+..|+-+|\n||.|.|.|.|||.|..||.||\n|+-+-+-+-+|+-+..|+-+|\n|.........|.....||.||\n|.........|.....|+-+|\n|.........|.....||.||\n|.........|.....|+-+|\n+---------+-----+---+\n"
+        }
+    ],
+    "S1": [
+        {
+            "input": "create table users (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table contests (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table problems (\n  id bigint primary key,\n  contest_id bigint,\n  code varchar not null,\n  constraint fk_problems_contest_id foreign key (contest_id) references contests (id)\n);\n\ncreate unique index on problems (contest_id, code);\n\ncreate table submissions (\n  id bigint primary key,\n  user_id bigint,\n  problem_id bigint,\n  success boolean not null,\n  submitted_at timestamp not null,\n  constraint fk_submissions_user_id foreign key (user_id) references users (id),\n  constraint fk_submissions_problem_id foreign key (problem_id) references problems (id)\n);\n\ninsert into users\nvalues (1, 'Marie Curie'),\n       (2, 'Stephen Hawking'),\n       (3, 'Ada Lovelace'),\n       (4, 'Albert Einstein'),\n       (5, 'Archimedes');\n\ninsert into contests\nvalues (1, 'Sandbox-Juniors'),\n       (2, 'Sandbox-Seniors'),\n       (3, 'Contest-Juniors'),\n       (4, 'Contest-Seniors');\n\ninsert into problems\nvalues (1, 1, 'A'),\n       (2, 2, 'A'),\n       (3, 3, 'A'),\n       (4, 3, 'B'),\n       (5, 4, 'A'),\n       (6, 4, 'B');\n\ninsert into submissions\nvalues (1, 2, 2, false, '2023-02-05 11:01:00'),\n       (2, 2, 2, true, '2023-02-05 11:02:00'),\n       (3, 2, 6, true, '2023-02-05 11:03:01'),\n       (4, 2, 1, true, '2023-02-05 11:04:00'),\n       (5, 2, 1, true, '2023-02-05 11:05:00'),\n       (6, 3, 6, true, '2023-02-05 11:06:00'),\n       (17, 1, 6, true, '2023-02-05 11:03:00'),\n       (8, 1, 2, true, '2023-02-05 11:08:00'),\n       (9, 1, 1, false, '2023-02-05 11:09:00'),\n       (10, 3, 1, false, '2023-02-05 11:10:00'),\n       (11, 5, 5, false, '2023-02-05 11:11:00'),\n       (13, 2, 6, true, '2023-02-05 11:03:00'),\n       (14, 3, 6, false, '2023-02-05 11:05:59'),\n       (15, 1, 6, true, '2023-02-05 11:04:00');\n",
+            "output": " id | contest_id | code\n----+------------+------\n  2 |          2 | A\n  6 |          4 | B\n(2 rows)\n"
+        },
+        {
+            "input": "create table users (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table contests (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table problems (\n  id bigint primary key,\n  contest_id bigint,\n  code varchar not null,\n  constraint fk_problems_contest_id foreign key (contest_id) references contests (id)\n);\n\ncreate unique index on problems (contest_id, code);\n\ncreate table submissions (\n  id bigint primary key,\n  user_id bigint,\n  problem_id bigint,\n  success boolean not null,\n  submitted_at timestamp not null,\n  constraint fk_submissions_user_id foreign key (user_id) references users (id),\n  constraint fk_submissions_problem_id foreign key (problem_id) references problems (id)\n);\n\ninsert into users\nvalues (1, 'Olivia'),\n       (2, 'Henry'),\n       (3, 'Lucas'),\n       (4, 'John'),\n       (5, 'Charlotte'),\n       (6, 'Henry');\n\ninsert into contests\nvalues (3, 'Main'),\n       (1, 'Practice');\n\ninsert into problems\nvalues (1, 3, 'A'),\n       (2, 3, 'B'),\n       (3, 1, 'A');\n\ninsert into submissions\nvalues (10, 3, 2, false, '2023-02-05 11:05:12'),\n       (20, 3, 2, true, '2023-02-05 11:07:49'), \n       (30, 3, 2, true, '2023-02-05 11:07:49'),\n       (40, 3, 1, false, '2023-02-05 11:01:32'), \n       (50, 3, 1, false, '2023-02-05 11:11:46'), \n       (60, 3, 1, false, '2023-02-05 11:27:05'),\n       (70, 6, 2, false, '2023-02-05 11:04:00'),\n       (80, 6, 2, true, '2023-02-05 11:05:00'),\n       (90, 6, 2, false, '2023-02-05 11:06:00'),\n       (100, 6, 2, true, '2023-02-05 11:07:00'),\n       (110, 6, 1, false, '2023-02-05 11:08:00'),\n       (120, 6, 1, true, '2023-02-05 11:09:00'),\n       (130, 2, 2, false, '2023-02-05 11:00:01'),\n       (150, 5, 1, false, '2023-02-05 11:07:48'),\n       (160, 5, 1, true, '2023-02-05 11:07:49'),\n       (170, 5, 1, true, '2023-02-05 11:07:50'),\n       (180, 1, 3, false, '2023-02-04 15:00:01'),\n       (190, 1, 3, true, '2023-02-04 15:00:01'),\n       (200, 5, 3, true, '2023-02-04 15:00:01'),\n       (210, 5, 3, false, '2023-02-04 15:00:01'),\n       (220, 2, 3, false, '2023-02-04 15:00:01'),\n       (230, 6, 3, false, '2023-02-04 15:00:01'),\n       (240, 6, 3, false, '2023-02-04 15:00:01');\n",
+            "output": " id | contest_id | code\n----+------------+------\n  1 |          3 | A\n  2 |          3 | B\n  3 |          1 | A\n(3 rows)\n"
+        }
+    ],
+    "S2": [
+        {
+            "input": "create table users (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table contests (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table problems (\n  id bigint primary key,\n  contest_id bigint,\n  code varchar not null,\n  constraint fk_problems_contest_id foreign key (contest_id) references contests (id)\n);\n\ncreate unique index on problems (contest_id, code);\n\ncreate table submissions (\n  id bigint primary key,\n  user_id bigint,\n  problem_id bigint,\n  success boolean not null,\n  submitted_at timestamp not null,\n  constraint fk_submissions_user_id foreign key (user_id) references users (id),\n  constraint fk_submissions_problem_id foreign key (problem_id) references problems (id)\n);\n\ninsert into users\nvalues (1, 'Marie Curie'),\n       (2, 'Stephen Hawking'),\n       (3, 'Ada Lovelace'),\n       (4, 'Albert Einstein'),\n       (5, 'Archimedes');\n\ninsert into contests\nvalues (1, 'Sandbox-Juniors'),\n       (2, 'Sandbox-Seniors'),\n       (3, 'Contest-Juniors'),\n       (4, 'Contest-Seniors');\n\ninsert into problems\nvalues (1, 1, 'A'),\n       (2, 2, 'A'),\n       (3, 3, 'A'),\n       (4, 3, 'B'),\n       (5, 4, 'A'),\n       (6, 4, 'B');\n\ninsert into submissions\nvalues (1, 2, 2, false, '2023-02-05 11:01:00'),\n       (2, 2, 2, true, '2023-02-05 11:02:00'),\n       (3, 2, 6, true, '2023-02-05 11:03:01'),\n       (4, 2, 1, true, '2023-02-05 11:04:00'),\n       (5, 2, 1, true, '2023-02-05 11:05:00'),\n       (6, 3, 6, true, '2023-02-05 11:06:00'),\n       (17, 1, 6, true, '2023-02-05 11:03:00'),\n       (8, 1, 2, true, '2023-02-05 11:08:00'),\n       (9, 1, 1, false, '2023-02-05 11:09:00'),\n       (10, 3, 1, false, '2023-02-05 11:10:00'),\n       (11, 5, 5, false, '2023-02-05 11:11:00'),\n       (13, 2, 6, true, '2023-02-05 11:03:00'),\n       (14, 3, 6, false, '2023-02-05 11:05:59'),\n       (15, 1, 6, true, '2023-02-05 11:04:00');\n",
+            "output": " id |      name       | solved_at_least_one_contest_count | take_part_contest_count\n----+-----------------+-----------------------------------+-------------------------\n  2 | Stephen Hawking |                                 3 |                       3\n  1 | Marie Curie     |                                 2 |                       3\n  3 | Ada Lovelace    |                                 1 |                       2\n  5 | Archimedes      |                                 0 |                       1\n  4 | Albert Einstein |                                 0 |                       0\n(5 rows)\n"
+        },
+        {
+            "input": "create table users (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table contests (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table problems (\n  id bigint primary key,\n  contest_id bigint,\n  code varchar not null,\n  constraint fk_problems_contest_id foreign key (contest_id) references contests (id)\n);\n\ncreate unique index on problems (contest_id, code);\n\ncreate table submissions (\n  id bigint primary key,\n  user_id bigint,\n  problem_id bigint,\n  success boolean not null,\n  submitted_at timestamp not null,\n  constraint fk_submissions_user_id foreign key (user_id) references users (id),\n  constraint fk_submissions_problem_id foreign key (problem_id) references problems (id)\n);\n\ninsert into users\nvalues (1, 'Olivia'),\n       (2, 'Henry'),\n       (3, 'Lucas'),\n       (4, 'John'),\n       (5, 'Charlotte'),\n       (6, 'Henry');\n\ninsert into contests\nvalues (3, 'Main'),\n       (1, 'Practice');\n\ninsert into problems\nvalues (1, 3, 'A'),\n       (2, 3, 'B'),\n       (3, 1, 'A');\n\ninsert into submissions\nvalues (10, 3, 2, false, '2023-02-05 11:05:12'),\n       (20, 3, 2, true, '2023-02-05 11:07:49'), \n       (30, 3, 2, true, '2023-02-05 11:07:49'),\n       (40, 3, 1, false, '2023-02-05 11:01:32'), \n       (50, 3, 1, false, '2023-02-05 11:11:46'), \n       (60, 3, 1, false, '2023-02-05 11:27:05'),\n       (70, 6, 2, false, '2023-02-05 11:04:00'),\n       (80, 6, 2, true, '2023-02-05 11:05:00'),\n       (90, 6, 2, false, '2023-02-05 11:06:00'),\n       (100, 6, 2, true, '2023-02-05 11:07:00'),\n       (110, 6, 1, false, '2023-02-05 11:08:00'),\n       (120, 6, 1, true, '2023-02-05 11:09:00'),\n       (130, 2, 2, false, '2023-02-05 11:00:01'),\n       (150, 5, 1, false, '2023-02-05 11:07:48'),\n       (160, 5, 1, true, '2023-02-05 11:07:49'),\n       (170, 5, 1, true, '2023-02-05 11:07:50'),\n       (180, 1, 3, false, '2023-02-04 15:00:01'),\n       (190, 1, 3, true, '2023-02-04 15:00:01'),\n       (200, 5, 3, true, '2023-02-04 15:00:01'),\n       (210, 5, 3, false, '2023-02-04 15:00:01'),\n       (220, 2, 3, false, '2023-02-04 15:00:01'),\n       (230, 6, 3, false, '2023-02-04 15:00:01'),\n       (240, 6, 3, false, '2023-02-04 15:00:01');\n",
+            "output": " id |   name    | solved_at_least_one_contest_count | take_part_contest_count\n----+-----------+-----------------------------------+-------------------------\n  5 | Charlotte |                                 2 |                       2\n  6 | Henry     |                                 1 |                       2\n  1 | Olivia    |                                 1 |                       1\n  3 | Lucas     |                                 1 |                       1\n  2 | Henry     |                                 0 |                       2\n  4 | John      |                                 0 |                       0\n(6 rows)\n"
+        }
+    ],
+    "S3": [
+        {
+            "input": "create table users (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table contests (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table problems (\n  id bigint primary key,\n  contest_id bigint,\n  code varchar not null,\n  constraint fk_problems_contest_id foreign key (contest_id) references contests (id)\n);\n\ncreate unique index on problems (contest_id, code);\n\ncreate table submissions (\n  id bigint primary key,\n  user_id bigint,\n  problem_id bigint,\n  success boolean not null,\n  submitted_at timestamp not null,\n  constraint fk_submissions_user_id foreign key (user_id) references users (id),\n  constraint fk_submissions_problem_id foreign key (problem_id) references problems (id)\n);\n\ninsert into users\nvalues (1, 'Marie Curie'),\n       (2, 'Stephen Hawking'),\n       (3, 'Ada Lovelace'),\n       (4, 'Albert Einstein'),\n       (5, 'Archimedes');\n\ninsert into contests\nvalues (1, 'Sandbox-Juniors'),\n       (2, 'Sandbox-Seniors'),\n       (3, 'Contest-Juniors'),\n       (4, 'Contest-Seniors');\n\ninsert into problems\nvalues (1, 1, 'A'),\n       (2, 2, 'A'),\n       (3, 3, 'A'),\n       (4, 3, 'B'),\n       (5, 4, 'A'),\n       (6, 4, 'B');\n\ninsert into submissions\nvalues (1, 2, 2, false, '2023-02-05 11:01:00'),\n       (2, 2, 2, true, '2023-02-05 11:02:00'),\n       (3, 2, 6, true, '2023-02-05 11:03:01'),\n       (4, 2, 1, true, '2023-02-05 11:04:00'),\n       (5, 2, 1, true, '2023-02-05 11:05:00'),\n       (6, 3, 6, true, '2023-02-05 11:06:00'),\n       (17, 1, 6, true, '2023-02-05 11:03:00'),\n       (8, 1, 2, true, '2023-02-05 11:08:00'),\n       (9, 1, 1, false, '2023-02-05 11:09:00'),\n       (10, 3, 1, false, '2023-02-05 11:10:00'),\n       (11, 5, 5, false, '2023-02-05 11:11:00'),\n       (13, 2, 6, true, '2023-02-05 11:03:00'),\n       (14, 3, 6, false, '2023-02-05 11:05:59'),\n       (15, 1, 6, true, '2023-02-05 11:04:00');\n",
+            "output": " rank | user_id |    user_name    | problem_count | latest_successful_submitted_at\n------+---------+-----------------+---------------+--------------------------------\n    1 |       1 | Marie Curie     |             1 | 2023-02-05 11:03:00\n    1 |       2 | Stephen Hawking |             1 | 2023-02-05 11:03:00\n    3 |       3 | Ada Lovelace    |             1 | 2023-02-05 11:06:00\n    4 |       5 | Archimedes      |             0 |\n(4 rows)\n"
+        },
+        {
+            "input": "create table users (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table contests (\n  id bigint primary key,\n  name varchar not null\n);\n\ncreate table problems (\n  id bigint primary key,\n  contest_id bigint,\n  code varchar not null,\n  constraint fk_problems_contest_id foreign key (contest_id) references contests (id)\n);\n\ncreate unique index on problems (contest_id, code);\n\ncreate table submissions (\n  id bigint primary key,\n  user_id bigint,\n  problem_id bigint,\n  success boolean not null,\n  submitted_at timestamp not null,\n  constraint fk_submissions_user_id foreign key (user_id) references users (id),\n  constraint fk_submissions_problem_id foreign key (problem_id) references problems (id)\n);\n\ninsert into users\nvalues (1, 'Olivia'),\n       (2, 'Henry'),\n       (3, 'Lucas'),\n       (4, 'John'),\n       (5, 'Charlotte'),\n       (6, 'Henry');\n\ninsert into contests\nvalues (3, 'Main'),\n       (1, 'Practice');\n\ninsert into problems\nvalues (1, 3, 'A'),\n       (2, 3, 'B'),\n       (3, 1, 'A');\n\ninsert into submissions\nvalues (10, 3, 2, false, '2023-02-05 11:05:12'),\n       (20, 3, 2, true, '2023-02-05 11:07:49'), \n       (30, 3, 2, true, '2023-02-05 11:07:49'),\n       (40, 3, 1, false, '2023-02-05 11:01:32'), \n       (50, 3, 1, false, '2023-02-05 11:11:46'), \n       (60, 3, 1, false, '2023-02-05 11:27:05'),\n       (70, 6, 2, false, '2023-02-05 11:04:00'),\n       (80, 6, 2, true, '2023-02-05 11:05:00'),\n       (90, 6, 2, false, '2023-02-05 11:06:00'),\n       (100, 6, 2, true, '2023-02-05 11:07:00'),\n       (110, 6, 1, false, '2023-02-05 11:08:00'),\n       (120, 6, 1, true, '2023-02-05 11:09:00'),\n       (130, 2, 2, false, '2023-02-05 11:00:01'),\n       (150, 5, 1, false, '2023-02-05 11:07:48'),\n       (160, 5, 1, true, '2023-02-05 11:07:49'),\n       (170, 5, 1, true, '2023-02-05 11:07:50'),\n       (180, 1, 3, false, '2023-02-04 15:00:01'),\n       (190, 1, 3, true, '2023-02-04 15:00:01'),\n       (200, 5, 3, true, '2023-02-04 15:00:01'),\n       (210, 5, 3, false, '2023-02-04 15:00:01'),\n       (220, 2, 3, false, '2023-02-04 15:00:01'),\n       (230, 6, 3, false, '2023-02-04 15:00:01'),\n       (240, 6, 3, false, '2023-02-04 15:00:01');\n",
+            "output": " rank | user_id | user_name | problem_count | latest_successful_submitted_at\n------+---------+-----------+---------------+--------------------------------\n    1 |       6 | Henry     |             2 | 2023-02-05 11:09:00\n    2 |       3 | Lucas     |             1 | 2023-02-05 11:07:49\n    2 |       5 | Charlotte |             1 | 2023-02-05 11:07:49\n    4 |       2 | Henry     |             0 |\n(4 rows)\n"
+        }
+    ]
+}
